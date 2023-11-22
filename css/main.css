@@ -139,5 +139,35 @@ body {
   line-height: 1.5;
 }
 body._lock {
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
+
+.header{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 5px;
+}
+
+.menu-list__link{
+  color: inherit;
+  position: relative;
+}
+.menu-list__link::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-icon-secondary, #C8C7D8);
+  transform: scaleX(0);
+  transition: transform 0.3s ease 0s;
+}
