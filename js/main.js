@@ -1,5 +1,3 @@
-/*! smooth-scroll v16.1.2 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
-
 window.Element && !Element.prototype.closest && (Element.prototype.closest = function (e) {
     var t, n = (this.document || this.ownerDocument).querySelectorAll(e),
         o = this;
